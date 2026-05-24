@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.S - Triagem Digital</title>
+    <link rel="icon" href="imagens/logo.png" type="image/png">
+    <link rel="stylesheet" href="sintomas2(style).css">
+</head>
+
+<body>
+
+    <div class="barrainicial">
+        <a href="inicial.html" class="voltar">←</a>
+
+        <img src="imagens/logo.png" alt="Logo" height="110px" width="115px">
+
+        <p style="color: whitesmoke; font-size: 40px;">
+            S.O.S
+        </p>
+    </div>
+
+    <div class="conteudo">
+
+        <br><br><br>
+
+        <p style="font-size: 75px; text-align: center;">
+            Registro
+        </p>
+
+        <div class="forms-container">
+
+            <div class="form1">
+
+                <form action="#">
+
+                    <p style="font-size: 45px; text-align: center;">
+                        Intensidade dos Sintomas
+                    </p>
+
+                    <br><br><br><br>
+
+                    <input class="checkbox-area" type="checkbox" id="intensidade1">
+                    <label class="checkbox-area" for="intensidade1">Leve</label>
+
+                    <br><br><br><br>
+
+                    <input class="checkbox-area" type="checkbox" id="intensidade2">
+                    <label class="checkbox-area" for="intensidade2">Moderado</label>
+
+                    <br><br><br><br>
+
+                    <input class="checkbox-area" type="checkbox" id="intensidade3">
+                    <label class="checkbox-area" for="intensidade3">Intensa</label>
+
+                    <br><br><br>
+
+                </form>
+
+            </div>
+
+            <div class="form2">
+
+                <form action="#">
+
+                    <p style="font-size: 45px; text-align: center;">
+                        Duração dos Sintomas
+                    </p>
+
+                    <br><br>
+
+                    <br>
+
+                    <input class="checkbox-area" type="checkbox" id="duracao1">
+                    <label class="checkbox-area" for="duracao1">Minutos</label>
+
+                    <br><br><br>
+
+                    <input class="checkbox-area" type="checkbox" id="duracao2">
+                    <label class="checkbox-area" for="duracao2">Horas</label>
+
+                    <br><br><br>
+
+                    <input class="checkbox-area" type="checkbox" id="duracao3">
+                    <label class="checkbox-area" for="duracao3">Dias</label>
+
+                    <br><br><br>
+
+                    <input class="checkbox-area" type="checkbox" id="duracao4">
+                    <label class="checkbox-area" for="duracao4">Semanas</label>
+
+                    <br><br><br>
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+        <form onsubmit="registrarDetalhes(event)">
+            <br><br><br><br>
+            <center><button class="input-button" type="submit">Continuar</button></center>
+        </form>
+
+    </div>
+    <script src="sintomas2.js"></script>
+</body>
+
+</html>

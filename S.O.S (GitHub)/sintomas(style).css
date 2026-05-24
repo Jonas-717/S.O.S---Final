@@ -1,0 +1,171 @@
+/* Reset geral: remove margens e espaçamentos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* facilita controle de tamanho */
+}
+
+/* Barra inicial (tipo navbar) */
+.barrainicial {
+  background-color: #98AA9E;
+  height: 115px;
+
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;     /* centraliza vertical */
+  gap: 10px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: url("imagens/background.jpeg") center/cover no-repeat;
+}
+
+/* camada branca por cima da imagem */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(243, 239, 227, 0.95);
+  /* quase branco total */
+  pointer-events: none;
+}
+
+/* garante que o conteúdo fique acima da camada */
+.barrainicial {
+  position: relative;
+  z-index: 1;
+}
+
+.conteudo {
+  position: relative;
+  z-index: 1;
+}
+
+.form1 {
+  background: rgba(255, 255, 255, 0.6); /* fundo mais visível */
+  padding: 40px;                        /* aumenta o espaço interno */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+  width: 600px;                         /*  aumenta o tamanho do fundo */
+
+  font-size: 18px;
+}
+
+.form2 {
+  background: rgba(255, 255, 255, 0.6); /* fundo mais visível */
+  padding: 40px;                        /* aumenta o espaço interno */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+  width: 600px;                         /*  aumenta o tamanho do fundo */
+
+  font-size: 18px;
+}
+
+.form3 {
+  background: rgba(255, 255, 255, 0.6); /* fundo mais visível */
+  padding: 40px;                        /* aumenta o espaço interno */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+  width: 600px;                         /*  aumenta o tamanho do fundo */
+
+  font-size: 18px;
+}
+
+.forms-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.input {
+  width: 100%;      
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.input-date {
+  width: 100%;      
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.input-genero {
+  width: 100%;      
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.input-button {
+  width: 40%;      
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  background-color: #6A7C70;
+  color: white;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.checkbox-area {
+  transform: scale(3.5);
+  margin: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.checkbox-area input {
+  margin-right: 8px;
+  transform: scale(2); /* deixa a caixinha maior */
+  cursor: pointer;
+}
+
+.checkbox-area label {
+  cursor: pointer;
+}
+
+/* seta na esquerda */
+.voltar {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  transition: 0.2s;
+}
+
+/* hover */
+.voltar:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* clique */
+.voltar:active {
+  transform: translateY(-50%) scale(0.95);
+}

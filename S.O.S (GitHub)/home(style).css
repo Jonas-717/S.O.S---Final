@@ -1,0 +1,321 @@
+/* Reset geral: remove margens e espaçamentos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* facilita controle de tamanho */
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+hr {
+  border: none;
+  height: 5px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    black,
+    transparent
+  );
+
+  margin: 50px 0;
+}
+/* Barra inicial (tipo navbar) */
+.barrainicial {
+  background-color: #98AA9E; /* cor de fundo */
+  height: 115px;             /* altura da barra */
+  display: flex;             /* ativa flexbox (alinha itens lado a lado) */
+  align-items: center;       /* centraliza verticalmente */
+  gap: 5px;                  /* espaço entre os elementos */
+}
+
+/* Área da direita (Cadastro e Login) */
+.direita {
+  margin-left: auto; /* empurra os itens pra direita */
+  margin-right: 20px; /* espaço da borda direita */
+  display: flex;       /* deixa os itens lado a lado */
+  gap: 20px;           /* espaço entre Cadastro e Login */
+}
+
+/* Estilo dos textos (quando usados como botão) */
+.direita h3 {
+  cursor: pointer;          /* muda o cursor ao passar o mouse */
+  border-radius: 10px;      /* borda arredondada */
+  font-size: 25px;          /* tamanho do texto */
+  border: 2px solid black;  /* borda visível */
+  padding: 5px 15px;        /* espaço interno */
+}
+
+/* Classe para textos maiores */
+.textogrande {
+  font-size: 40px;
+}
+
+/* Estilo de botão (usado em <a>) */
+.botao-cadastro {
+  text-decoration: none; /* remove sublinhado do link */
+  background-color: #688A65;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 8px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s; /* animação suave */
+}
+
+.botao-login {
+  text-decoration: none; /* remove sublinhado do link */
+  background-color: #B3C9D6;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 8px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s; /* animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.botao-cadastro:hover {
+  background-color: #2c4929;
+  color: white;
+}
+
+.botao-login:hover {
+  background-color: #2e4654;
+  color: white;
+}
+
+.destaque {
+    color: #95A69C;
+}
+
+.bicho-retangular {
+  background-color: #6A7C70;
+  border: 2px;
+  width: 900px;
+  height: 200px;
+  margin-left: 250px;
+  margin-top: 220px;
+  border-radius: 15px;
+}
+
+.bicho-retangular2 {
+  background-color: #6A7C70;
+  border: 2px;
+  width: 900px;
+  height: 200px;
+  margin-left: 250px;
+  margin-top: 75px;
+  border-radius: 15px;
+}
+
+.bicho-retangular3 {
+  background-color: #6A7C70;
+  border: 2px;
+  width: 900px;
+  height: 200px;
+  margin-left: 250px;
+  margin-top: 75px;
+  border-radius: 15px;
+}
+
+.bicho-retangular4 {
+  background-color: #6A7C70;
+  border: 2px;
+  width: 1350px;
+  height: 700px;
+  margin-left: 550px;
+  margin-top: 75px;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.bicho-retangular5 {
+  background-color: #DCDFC4;
+  border: 2px;
+  width: 1350px;
+  height: 460px;
+  margin-left: 550px;
+  margin-top: 75px;
+  border-radius: 15px;
+}
+
+.bicho-retangular6 {
+  background-color: #6A7C70;
+  border: 2px;
+  width: 1750px;
+  height: 250px;
+  margin-left: 380px;
+  margin-top: 75px;
+  border-radius: 15px;
+}
+
+.bicho-retangular7 {
+  width: 100%;
+  height: 400px;
+
+  background-image:
+    linear-gradient(rgba(45, 53, 55, 0.7),
+    rgba(45, 53, 55, 0.7)),
+    url(imagens/background_rodape.jpeg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.texto1 {
+  color: #F3EFE3;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 8px;
+  transform: translateY(15px);
+}
+
+.texto2 {
+  color: #F3EFE3;
+  transform: translateX(35px) translateY(60px);
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.texto3 {
+  color: #F3EFE3;
+  transform: translateX(465px);
+  font-size: 25px;
+  letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.texto4 {
+  color: #F3EFE3;
+  transform: translateX(150px) translateY(40px);
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.texto5 {
+  color: #F3EFE3;
+  transform: translateX(310px) translateY(40px);
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.textodescri {
+  color: #F3EFE3;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 68px;
+  transform: translateY(15px);
+}
+
+.textodescri1 {
+  color: #F3EFE3;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 1px;
+  transform: translateY(50px);
+}
+
+.textodescri2 {
+  color: #F3EFE3;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 1px;
+  transform: translateY(90px);
+}
+
+.textorodape1 {
+  color: #F3EFE3;
+  font-size: 30px;
+  letter-spacing: 1px;
+  transform: translateX(40px) translateY(20px);
+}
+
+.textorodape2 {
+  color: #F3EFE3;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transform: translateX(40px) translateY(20px);
+}
+
+.textorodape3 {
+  color: #F3EFE3;
+  font-size: 25px;
+  letter-spacing: 1px;
+  transform: translateX(40px) translateY(20px);
+}
+
+.links-rodape {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.links-rodape a {
+  text-decoration: none;
+  color: #F3EFE3;
+  font-size: 22px;
+  font-weight: bold;
+
+  padding: 10px 18px;
+  border-radius: 12px;
+
+  background-color: #3F4A4D;
+
+  transition: 0.3s ease;
+}
+
+/* efeito ao passar o mouse */
+.links-rodape a:hover {
+  background-color: #688A65;
+  color: white;
+
+  transform: translateY(-3px);
+}
+
+.imagem1 {
+  position: absolute;
+  top: 575px;
+  right: -200px;
+  width: 1150px;   /* aumenta tamanho */
+  height: auto;   /* mantém proporção */
+  border-radius: 50px; /* arredonda */
+  overflow: hidden;
+  border: 5px solid #466070;
+}
+
+.imagem2 {
+  margin-top: 70px;
+  transform: translateX(95px);
+  width: 320px;   /* aumenta tamanho */
+  height: auto;   /* mantém proporção */
+  border-radius: 10px; /* arredonda */
+  overflow: hidden;
+  border: 5px solid #2E7E29;
+}
+
+.imagem3 {
+  margin-top: 70px;
+  transform: translateX(600px);
+  width: 320px;   /* aumenta tamanho */
+  height: auto;   /* mantém proporção */
+  border-radius: 10px; /* arredonda */
+  overflow: hidden;
+  border: 5px solid #AE5128;
+}
+
+hr {
+  color: black;
+}
